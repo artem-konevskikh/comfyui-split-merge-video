@@ -1,5 +1,7 @@
 # ComfyUI Video Processing Nodes
 
+<span style="color:red;">**Note:** This project is under active development. It may not work at all. Features and documentation may change.</span>
+
 Custom nodes for ComfyUI that add video splitting and merging capabilities with crossfade transitions.
 
 ## Features
