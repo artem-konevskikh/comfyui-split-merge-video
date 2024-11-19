@@ -1,3 +1,14 @@
-from .video_nodes import NODE_CLASS_MAPPINGS, NODE_DISPLAY_NAME_MAPPINGS
+from .nodes.splitter import VideoSplitterNode
+from .nodes.merger import VideoMergerNode
 
-__all__ = ['NODE_CLASS_MAPPINGS', 'NODE_DISPLAY_NAME_MAPPINGS']
+NODE_CLASS_MAPPINGS = {
+    "VideoSplitter": VideoSplitterNode,
+    "VideoMerger": VideoMergerNode,
+}
+
+NODE_DISPLAY_NAME_MAPPINGS = {
+    "VideoSplitter": "Split Video into Segments",
+    "VideoMerger": "Merge Video Segments",
+}
+
+__all__ = ["NODE_CLASS_MAPPINGS", "NODE_DISPLAY_NAME_MAPPINGS"]
